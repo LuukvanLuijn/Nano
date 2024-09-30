@@ -1,2 +1,4 @@
 # NanoXL
-niga
+appstore to play games:
+  hangman
+  numbers
