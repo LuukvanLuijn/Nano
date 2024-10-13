@@ -1,5 +1,9 @@
-import time, random, sys, subprocess
+import time, random, sys, subprocess, os
 from colorama import Fore, Back, Style
+
+def clear():
+    os.system('cls')
+
 
 def numbers():
     difficulty = input("What difficulty do you want to play? Choose: easy, medium, hard, impossible: ")
@@ -176,7 +180,7 @@ def nanoXL():
 
     print("type 1 for numbers\ntype 2 for hangman\ntype 3 to exit")
     game = input("your choice: ")
-    print("\n \n \n \n \n \n \n \n")
+    clear()
     print("____________________________________________________________________________________________________________________________________________")
     if game == "1":
         numbers()
@@ -187,4 +191,5 @@ def nanoXL():
     return
 nanoXL()
 close = input(Fore.GREEN + "Press enter to exit")
+    
     
